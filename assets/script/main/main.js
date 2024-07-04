@@ -1,8 +1,8 @@
 $('.slider').slick({
   arrows: true,
   dots: true,
-  prevArrow: '<img src="assets/image/arrow-left-circle-fill.png" class="slide-arrow prev-arrow">',
-  nextArrow: '<img src="assets/image/arrow-right-circle-fill.png" class="slide-arrow next-arrow">',
+  prevArrow: '<img src="assets/image/arrow-left-circle-fill.jpg" class="slide-arrow prev-arrow">',
+  nextArrow: '<img src="assets/image/arrow-right-circle-fill.jpg" class="slide-arrow next-arrow">',
   slidesToShow: 3,
 
   responsive: [

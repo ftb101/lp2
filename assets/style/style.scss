@@ -44,11 +44,12 @@ a {
 }
 
 header{
-  background: url(.././image/mainVisual_sp.jpg.png)top center no-repeat;
+  background: url(.././image/mainVisual_sp.jpg)center center no-repeat;
+  background-size: cover;
   min-width: 390px;
-  height: 555px;
+  height: 450px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 155px;
   & .logo{
     font-size: 24px;
     font-family: marcellus;
@@ -81,7 +82,7 @@ header{
     // max-width: 1500px;
     width: 100%;
     height: 720px;
-    background: url(.././image/メインビジュアル.png)top center;
+    background: url(.././image/mainVisual.jpg)top center;
     background-size: cover;
     & .logo{
       font-size: 28px;
@@ -117,7 +118,7 @@ header{
 
 section{
   &.second{
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: 50px;
   }
   margin-bottom: 49px;
@@ -133,19 +134,18 @@ section{
       & .text{
         & h3{
           text-align: center;
+          font-size: 14px;
+          letter-spacing: 0.1em;
           padding-top: 22px;
-          padding-right: 26px;
           padding-bottom: 6px;
-          @media screen and (min-width: 768px) {
-          }
         }
         & p{
           color: #111;
           font-size: 14px;
           font-weight: 400;
           font-family:"Noto Serif JP";
-          letter-spacing: 1px;
-          padding-left: 17px;
+          font-size: 16px;
+          letter-spacing: 0.1em;
           padding-bottom: 18px;
         }
       }
@@ -156,6 +156,8 @@ section{
         margin: 0 auto;
         margin-bottom: 20px;
         & a{
+          letter-spacing: 0;
+          font-weight: 600;
           color: #fff;
           border-radius: 29px;
           display: block;
@@ -194,22 +196,21 @@ section{
         justify-content: space-between;
         align-items: center;
         & .text{
-          width: 220px;
+          width: 340px;
           margin-left: 4.5%;
           & h3{
+            font-weight: 600;
             font-size: 24px;
-            text-align:left;
             padding-top: 22px;
             padding-right: 0px;
             padding-bottom: 6px;
-            letter-spacing: -5px;
           }
           & p{
             color: #111;
             font-size: 16px;
             font-weight: 400;
             font-family:"Noto Serif JP";
-            letter-spacing: 1px;
+            letter-spacing: 0px;
             padding-left: 5px;
             text-align: left;
           }
@@ -228,7 +229,6 @@ section{
           height: 58px;
           line-height: 58px;
           margin: 5px 0;
-          container: inline-size;
         }
         & a{
           width:300px;
@@ -247,7 +247,9 @@ section{
 #keep{
   text-align: center;
   height:680px;
-  background: url(.././image/マスクグループ\ 4sp.png)center center no-repeat;
+  // height: auto;
+  background: url(.././image/cream_sp.jpg)center center no-repeat;
+  background-size: cover;
   & .container{
     width: 358px;
     margin: 0 auto;
@@ -275,7 +277,7 @@ section{
   }
   @media screen and (min-width: 768px) {
     position: relative;
-    background: url(.././image/マスクグループ\ 4.png)center center no-repeat;
+    background: url(.././image/cream.jpg)center center no-repeat;
     & .container{
       max-width: 1200px;
       height: 263px;
@@ -322,9 +324,15 @@ section{
     margin-bottom: 120px;
   }
     & h2{
-      font-size:50px ;
+      font-size: 30px;
+      letter-spacing: 0.05em;
       margin-top: 37px;
       margin-bottom: 6px;
+      @media screen and (min-width: 768px) {
+        font-size: 50px;
+        margin-left: -8px;
+        letter-spacing: -0.5px;
+      }
     }
   & h3{
     font-size: 16px;
@@ -362,12 +370,15 @@ section{
     }
     & p{
       font-size: 14px;
+      line-height: 28px;
+      letter-spacing: 0px;
+      @media screen and (min-width: 768px){
+        font-size: 16px;
+      }
       &.inner{
         text-align: left;
         margin: 15px auto;
-        line-height: 2;
         width: 250px;
-        letter-spacing: -3.1px;
       }
     }
   }
@@ -386,7 +397,7 @@ section{
       width: 50px;
       height: 50px;
     }
-    left: 0px;//-40px;
+    left: 0px;
     width: 32px;
     height: 32px;
   }
@@ -428,9 +439,7 @@ section{
   .slick-track{
     overflow: hidden;
   }
-  .slick-slide{
-    overflow: hidden;
-  }
+
 }
 
 #QA{
@@ -451,7 +460,7 @@ section{
   }
   & h3{
     font-size: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     @media screen and (min-width: 768px){
       font-size: 20px;
     }
@@ -462,7 +471,7 @@ section{
       width: 358px;
       background-color: #fff;
       font-size: 15px;
-      font-weight: medium;
+      font-weight: 500;
       font-family: 'Noto Serif JP';
       margin: 0 auto;
       margin-bottom: 25px;
@@ -482,6 +491,7 @@ section{
         display: flex;
         height: 53px;
         padding: 16px 0;
+        line-height: 28px;
         @media screen and (min-width: 768px){
           height: 52px;
           // line-height: 71px;
@@ -489,7 +499,7 @@ section{
         }
         & .q-left{
           font-size: 16px;
-          font-weight: medium;
+          font-weight: 500;
           font-family:'EB Garamond';
           @media screen and (min-width: 768px){
             font-size: 18px;
@@ -515,22 +525,26 @@ section{
         }
       }
       & .anser{
-        display: flex;
+        display: inline-block;
         text-align: left;
         display: none;
         @media screen and (min-width: 768px){
           padding-bottom: 40px;
         }
         & .q-left{
-          padding-right: 10px;
+          padding-right: 5px;
+          vertical-align: top;
+          display: inline-block;
           @media screen and (min-width: 768px){
             font-size: 18px;
           }
         }
         & .q-center{
-          width: 93%;
-          letter-spacing: -3.2px;
+          width: 90%;
+          display: inline-block;
+          letter-spacing: -3.4px;
           line-height: 1.7rem;
+          padding-bottom: 55px;
           @media screen and (min-width: 768px){
             font-size: 15px;
             width: 490px;
@@ -559,6 +573,7 @@ footer{
       flex-wrap: wrap;
       gap: 14.5%;
       align-items: center;
+      height: 104px;
     }
     position: relative;
     box-sizing: border-box;
