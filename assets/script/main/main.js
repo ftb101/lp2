@@ -4,15 +4,19 @@ $('.slider').slick({
   prevArrow: '<img src="assets/image/arrow-left-circle-fill.jpg" class="slide-arrow prev-arrow">',
   nextArrow: '<img src="assets/image/arrow-right-circle-fill.jpg" class="slide-arrow next-arrow">',
   slidesToShow: 3,
-
-  responsive: [
-    {
-      breakpoint: 768, // 399px以下のサイズに適用
+    responsive: [{
+      breakpoint: 1200,
       settings: {
-      slidesToShow: 1,
-      },
+          arrows: false,
+      }
     },
-  ],
+    {
+      breakpoint: 768,
+      settings: {
+          slidesToShow: 1,
+      }
+    },
+  ]
 });
 
 // アコーディオン

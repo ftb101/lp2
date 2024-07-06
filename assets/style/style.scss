@@ -23,7 +23,7 @@ a {
   text-decoration: none;
 }
 
-.noto_p{
+.font__noto-p{
   color: #111;
   font-size: 18px;
   font-weight: 700;
@@ -38,9 +38,8 @@ a {
 }
 
 .sub-title{
-  font-weight: 700;
+  font-weight: 600;
   font-family:"Noto Serif JP";
-  letter-spacing: -4px;
 }
 
 header{
@@ -50,6 +49,9 @@ header{
   height: 450px;
   text-align: center;
   margin-bottom: 155px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
   & .logo{
     font-size: 24px;
     font-family: marcellus;
@@ -57,7 +59,7 @@ header{
     padding-top: 24px;
     letter-spacing: 4px;
   }
-  & .header_title{
+  & .header-title{
     padding-top: 340px;
     padding-left: 6%;
     text-align: left;
@@ -66,7 +68,7 @@ header{
       font-family: "marcellus";
       font-weight: 400;
       padding-top: 24px;
-      letter-spacing: 11.5px;
+      letter-spacing: 0.3em;
       line-height: 1.3;
     }
     & p{
@@ -74,12 +76,11 @@ header{
       font-family: "Noto Serif JP";
       font-weight: 400;
       padding-top: 6px;
-      letter-spacing: 1.9px;
+      letter-spacing: 0.3em;
       line-height: 1.23;
     }
   }
   @media screen and (min-width: 768px) {
-    // max-width: 1500px;
     width: 100%;
     height: 720px;
     background: url(.././image/mainVisual.jpg)top center;
@@ -89,9 +90,9 @@ header{
       font-family: "marcellus";
       font-weight: 400;
       padding-top: 30px;
-      letter-spacing: 5px;
+      letter-spacing: 0.2em;
     }
-    & .header_title{
+    & .header-title{
       max-width:1200px;
       margin: 0 auto;
       padding-left: 9.5%;
@@ -101,7 +102,7 @@ header{
         font-family: "marcellus";
         font-weight: 400;
         padding-top: 24px;
-        letter-spacing: 14.2px;
+        letter-spacing: 0.3em;
         line-height: 1.3;
       }
       & p{
@@ -109,7 +110,7 @@ header{
         font-family: "Noto Serif JP";
         // font-weight: 400;
         padding-top: 10px;
-        letter-spacing: 2.4px;
+        letter-spacing: 0.3em;
         line-height: 1.4;
       }
     }
@@ -117,8 +118,8 @@ header{
 }
 
 section{
-  &.second{
-    margin-top: 50px;
+  &.section-second{
+    margin-top: 70px;
     margin-bottom: 50px;
   }
   margin-bottom: 49px;
@@ -134,7 +135,7 @@ section{
       & .text{
         & h3{
           text-align: center;
-          font-size: 14px;
+          font-size: 18px;
           letter-spacing: 0.1em;
           padding-top: 22px;
           padding-bottom: 6px;
@@ -161,7 +162,7 @@ section{
           color: #fff;
           border-radius: 29px;
           display: block;
-          &.blue{
+          &.color-blue{
             background-color:#46c4db ;
             &:hover{
               background-color: #fff;
@@ -170,7 +171,7 @@ section{
               box-sizing: border-box;
             }
           }
-          &.green{
+          &.color-green{
             background-color:#5dd5ab ;
             &:hover{
               background-color: #fff;
@@ -197,10 +198,11 @@ section{
         align-items: center;
         & .text{
           width: 340px;
-          margin-left: 4.5%;
+          margin-left: 4%;
           & h3{
             font-weight: 600;
             font-size: 24px;
+            letter-spacing: 0.1em;
             padding-top: 22px;
             padding-right: 0px;
             padding-bottom: 6px;
@@ -209,9 +211,9 @@ section{
             color: #111;
             font-size: 16px;
             font-weight: 400;
+            letter-spacing: 0.1em;
             font-family:"Noto Serif JP";
-            letter-spacing: 0px;
-            padding-left: 5px;
+            padding-left: 10px;
             text-align: left;
           }
         }
@@ -232,10 +234,10 @@ section{
         }
         & a{
           width:300px;
-          &.blue{
+          &.color-blue{
             background-color:#46c4db ;
           }
-          &.green{
+          &.color-green{
             background-color:#5dd5ab ;
           }
         }
@@ -247,7 +249,6 @@ section{
 #keep{
   text-align: center;
   height:680px;
-  // height: auto;
   background: url(.././image/cream_sp.jpg)center center no-repeat;
   background-size: cover;
   & .container{
@@ -273,7 +274,6 @@ section{
     text-align: left;
     font-family: "Noto Serif JP";
     line-height: 2.3;
-    letter-spacing: -3.3px;
   }
   @media screen and (min-width: 768px) {
     position: relative;
@@ -288,10 +288,11 @@ section{
       text-align: left;
       width: 467px;
       top: 20.8%;
-      right: 14.4%;
+      right: 14.2%;
     }
     & h2{
-      color: #fff;
+      font-size: 38px;
+      line-height: 54px;
       padding-top: 49px;
       margin-bottom: 10px;
     }
@@ -301,13 +302,8 @@ section{
     }
     & p{
       width: 428px;
-      // color: #fff;
-      // font-size: 14px;
-      // font-weight: regular;
-      // text-align: left;
       font-family: "Noto Serif JP";
       line-height: 2.3;
-      letter-spacing: -3.4px;
     }
   }
 }
@@ -319,11 +315,11 @@ section{
   margin-bottom: 77px;
   @media screen and (min-width: 768px) {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width:1000px;
     width: 100%;
     margin-bottom: 120px;
   }
-    & h2{
+  & h2{
       font-size: 30px;
       letter-spacing: 0.05em;
       margin-top: 37px;
@@ -347,7 +343,7 @@ section{
     width: 280px;
     height: 344px;
     margin: 0 auto;
-    background-color: #dbf7f9;
+    background-color:#dbf7f9;
     @media screen and (min-width: 768px) {
       max-width: 300px;
       width: 100%;
@@ -357,13 +353,16 @@ section{
       @media screen and (min-width: 768px) {
         padding-top: 43px;
         & img{
-          width: 100px;
+          width: 95px;
         }
       }
       width: 100%;
       padding-top: 30px;
       padding-bottom: 8px;
       margin: 0 auto;
+      @media screen and (min-width: 768px){
+        padding-bottom: 4px;
+      }
       & img{
         text-align: center;
       }
@@ -374,11 +373,12 @@ section{
       letter-spacing: 0px;
       @media screen and (min-width: 768px){
         font-size: 16px;
+        line-height: 28px;
       }
       &.inner{
         text-align: left;
         margin: 15px auto;
-        width: 250px;
+        max-width: 260px;
       }
     }
   }
@@ -387,6 +387,7 @@ section{
     position: absolute;
     top: 53%;
     margin-top: -25px;
+    z-index: 10;
     @media screen and (min-width: 768px) {
       top: 51%;
     }
@@ -436,10 +437,6 @@ section{
     color: #00afbf;
     opacity: 1;
   }
-  .slick-track{
-    overflow: hidden;
-  }
-
 }
 
 #QA{
@@ -477,7 +474,6 @@ section{
       margin-bottom: 25px;
       @media screen and (min-width: 768px){
         width: 600px;
-        // margin-bottom: 0px;
         margin-bottom: 26px;
       }
       & .inner{
@@ -494,7 +490,6 @@ section{
         line-height: 28px;
         @media screen and (min-width: 768px){
           height: 52px;
-          // line-height: 71px;
           padding: 20px 0 0px;
         }
         & .q-left{
@@ -508,8 +503,9 @@ section{
         & .q-center{
           width: 270px;
           text-align: left;
-          letter-spacing: -3.2px;
-          line-height: 1.7rem;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 28px;
           padding:0 3%;
           @media screen and (min-width: 768px){
             font-size: 15px;
@@ -524,12 +520,12 @@ section{
           transform: rotate(180deg);
         }
       }
-      & .anser{
+      & .answer{
         display: inline-block;
         text-align: left;
         display: none;
         @media screen and (min-width: 768px){
-          padding-bottom: 40px;
+          padding-bottom: 20px;
         }
         & .q-left{
           padding-right: 5px;
@@ -540,14 +536,16 @@ section{
           }
         }
         & .q-center{
-          width: 90%;
+          width: 92%;
           display: inline-block;
-          letter-spacing: -3.4px;
-          line-height: 1.7rem;
-          padding-bottom: 55px;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 28px;
+          padding-bottom: 25px;
           @media screen and (min-width: 768px){
             font-size: 15px;
-            width: 490px;
+            width: 520px;
+            padding-bottom: 0px;
           }
         }
       }
@@ -562,18 +560,22 @@ footer{
   background-color: #0071ce;
   @media screen and (min-width: 768px) {
     height: 104px;
+    min-height: 104px;
+      height: auto;
   }
 
   & .container{
     @media screen and (min-width: 768px) {
       max-width:1200px;
+      width: 100%;
       margin: 0 auto;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 14.5%;
+      gap: 13%;
       align-items: center;
-      height: 104px;
+      min-height: 104px;
+      height: auto;
     }
     position: relative;
     box-sizing: border-box;
@@ -583,10 +585,14 @@ footer{
       font-size: 28px;
       color: #fff;
       text-align: center;
+      letter-spacing: 0.2em;
       padding: 20px 0 25px;
-      letter-spacing: 2.7px;
+      font-weight: normal;
       @media screen and (min-width: 768px) {
+        width: 194px;
         font-size: 32px;
+        letter-spacing: 0.19em;
+        text-align: left;
       }
     }
     & .flex{
@@ -600,7 +606,7 @@ footer{
         font-size: 14px;
         padding-bottom: 0;
         width: 400px;
-        gap: 6%;
+        gap: 9%;
       }
       & a{
         color: #fff;
@@ -614,8 +620,12 @@ footer{
       letter-spacing: -0.6px;
       padding-bottom: 28px;
       @media screen and (min-width: 768px) {
+        width: 247px;
         font-size: 12px;
-        padding-bottom: 0;
+        text-align: right;
+        letter-spacing: 0.01em;
+        font-weight: 400;
+        padding:30px 0;
       }
     }
     & .totop{
@@ -623,7 +633,7 @@ footer{
       right: 2%;
       top:-40px;
       @media screen and (min-width: 768px) {
-        right: 0;
+        right: 2%;
       }
     }
   }
