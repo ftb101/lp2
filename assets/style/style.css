@@ -326,7 +326,7 @@ section .cream.container li a.color-green:hover {
   #voice {
     margin: 0 auto;
     max-width: 1000px;
-    width: 100%;
+    width: calc(100% - 200px);
     margin-bottom: 120px;
   }
 }
