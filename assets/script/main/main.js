@@ -1,18 +1,17 @@
 $('.slider').slick({
   arrows: true,
   dots: true,
-  prevArrow: '<img src="assets/image/arrow-left-circle-fill.png" class="slide-arrow prev-arrow">',
-  nextArrow: '<img src="assets/image/arrow-right-circle-fill.png" class="slide-arrow next-arrow">',
+  prevArrow: '<img src="assets/image/arrow_left_circle_fill.svg" class="slide-arrow prev-arrow">',
+  nextArrow: '<img src="assets/image/arrow_right_circle_fill.svg" class="slide-arrow next-arrow">',
   slidesToShow: 3,
-
-  responsive: [
+    responsive: [
     {
-      breakpoint: 768, // 399px以下のサイズに適用
+      breakpoint: 768,
       settings: {
-      slidesToShow: 1,
-      },
+          slidesToShow: 1,
+      }
     },
-  ],
+  ]
 });
 
 // アコーディオン
